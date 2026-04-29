@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#08090f" />
+
+  <title>Vidéosurveillance professionnelle IP — Caméras, NVR, supervision RGPD | MCO Facilities</title>
+  <meta name="description" content="Conception, déploiement et exploitation de systèmes de vidéosurveillance IP pour entreprises et collectivités. Caméras, NVR, supervision déportée, conformité RGPD et CNIL. Varces, Grenoble, Auvergne-Rhône-Alpes." />
+  <meta name="keywords" content="vidéosurveillance, caméras IP, NVR, VMS, RGPD, CNIL, télésurveillance, ANPR, lecture de plaques, caméra thermique, Grenoble, Isère" />
+  <link rel="canonical" href="https://mco-facilities.vibeia.io/services/videosurveillance/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://mco-facilities.vibeia.io/services/videosurveillance/" />
+  <meta property="og:title" content="Vidéosurveillance IP — MCO Facilities" />
+  <meta property="og:description" content="Sécurisez vos sites avec des systèmes vidéo IP haute définition. Conformité RGPD intégrée, supervision 24/7, levée de doute." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1573164574511-73c773193279?w=1200&q=80&auto=format&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://mco-facilities.vibeia.io/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://mco-facilities.vibeia.io/#services" },
+          { "@type": "ListItem", "position": 3, "name": "Vidéosurveillance", "item": "https://mco-facilities.vibeia.io/services/videosurveillance/" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Vidéosurveillance professionnelle IP",
+        "name": "Vidéosurveillance IP",
+        "provider": { "@type": "Organization", "name": "MCO Facilities", "url": "https://mco-facilities.vibeia.io/" },
+        "areaServed": { "@type": "AdministrativeArea", "name": "Auvergne-Rhône-Alpes" },
+        "description": "Conception, déploiement et exploitation de systèmes vidéo IP. Caméras, NVR/VMS, supervision déportée, levée de doute, conformité RGPD et CNIL."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Faut-il déclarer une vidéosurveillance à la CNIL ?", "acceptedAnswer": { "@type": "Answer", "text": "Pour les espaces non ouverts au public (locaux professionnels privés), une inscription au registre des traitements RGPD est obligatoire mais pas de déclaration CNIL. Pour les lieux ouverts au public, une autorisation préfectorale est requise. MCO Facilities prend en charge l'ensemble du processus de conformité." } },
+          { "@type": "Question", "name": "Quelle est la durée légale de conservation des images ?", "acceptedAnswer": { "@type": "Answer", "text": "La CNIL recommande 30 jours maximum. Au-delà, la durée doit être justifiée par un besoin légitime (procédure judiciaire, investigation). MCO Facilities paramètre par défaut une rotation à 30 jours." } },
+          { "@type": "Question", "name": "Quelle différence entre NVR et VMS ?", "acceptedAnswer": { "@type": "Answer", "text": "Un NVR (Network Video Recorder) est un enregistreur dédié, fermé, simple. Un VMS (Video Management System) est un logiciel ouvert qui gère plusieurs sites, intègre l'analyse vidéo, le contrôle d'accès et l'IA. Pour 1 à 16 caméras, NVR suffit. Au-delà ou pour du multi-sites, VMS est recommandé." } },
+          { "@type": "Question", "name": "Peut-on coupler la vidéo et le contrôle d'accès ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, c'est même fortement recommandé. Le couplage permet la levée de doute visuelle à chaque badgeage, et la vérification a posteriori des entrées/sorties. Les deux systèmes sont gérés depuis la même interface." } },
+          { "@type": "Question", "name": "Que se passe-t-il en cas de coupure réseau ?", "acceptedAnswer": { "@type": "Answer", "text": "Les caméras IP enregistrent en local sur carte SD ou sur le NVR pendant la coupure, puis synchronisent avec le cloud à la reprise. Aucune image n'est perdue. Une alerte est envoyée à l'exploitant en cas de coupure prolongée." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="page--service">
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div></div>
+
+  <header class="nav" id="nav">
+    <a href="/" class="nav__logo" aria-label="MCO Facilities — accueil">
+      <svg width="148" height="36" viewBox="0 0 180 44" fill="none">
+        <g transform="translate(2 6)"><path d="M16 0 L30 8 L30 24 L16 32 L2 24 L2 8 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 21 L9 11 L16 18 L23 11 L23 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+        <text x="44" y="29" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="20" letter-spacing="0.5" fill="currentColor">MCO</text>
+        <text x="92" y="29" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="20" fill="currentColor" opacity="0.55">facilities</text>
+      </svg>
+    </a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <div class="nav__dropdown">
+        <button class="nav__dropdown-trigger is-active" aria-haspopup="true" aria-expanded="false">Services <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav__dropdown-menu">
+          <a href="/services/maintien-condition-operationnelle/"><span class="nav__dropdown-num">01</span><div><strong>Maintien en Condition Opérationnelle</strong><span>Maintenance préventive et corrective</span></div></a>
+          <a href="/services/videosurveillance/" class="is-current"><span class="nav__dropdown-num">02</span><div><strong>Vidéosurveillance</strong><span>Systèmes IP, supervision, RGPD</span></div></a>
+          <a href="/services/controle-acces/"><span class="nav__dropdown-num">03</span><div><strong>Contrôle d'accès</strong><span>Badges, biométrie, mobile NFC</span></div></a>
+          <a href="/services/maintenance-multi-technique/"><span class="nav__dropdown-num">04</span><div><strong>Maintenance multi-technique</strong><span>CVC, électricité, plomberie</span></div></a>
+        </div>
+      </div>
+      <a href="/#expertise">Expertise</a>
+      <a href="/#methode">Méthode</a>
+      <a href="/#references">Références</a>
+    </nav>
+    <a href="/contact/" class="nav__cta"><span>Nous contacter</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="page-hero__photo" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1573164574511-73c773193279?w=1920&q=75&auto=format&fit=crop" alt="" loading="eager" fetchpriority="high" />
+      </div>
+      <div class="page-hero__inner">
+        <nav class="breadcrumb" aria-label="Fil d'ariane">
+          <a href="/">Accueil</a><span aria-hidden="true">·</span>
+          <a href="/#services">Services</a><span aria-hidden="true">·</span>
+          <span aria-current="page">Vidéosurveillance</span>
+        </nav>
+
+        <span class="page-hero__kicker" data-reveal>
+          <span class="dot"></span><span>Service 02 — Vidéosurveillance</span>
+        </span>
+
+        <h1 class="page-hero__title" data-reveal>
+          <em>Voir</em> ce qui<br/>compte vraiment.
+        </h1>
+
+        <p class="page-hero__lede" data-reveal>
+          Conception, déploiement et exploitation de systèmes de <strong>vidéosurveillance IP</strong>
+          pour entreprises, collectivités et industriels. Caméras haute résolution, supervision
+          déportée 24/7, <strong>conformité RGPD et CNIL intégrée</strong> dès la phase d'étude.
+        </p>
+
+        <div class="page-hero__actions" data-reveal>
+          <a href="/contact/" class="btn btn--primary"><span>Sécuriser un site</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#offre" class="btn btn--ghost"><span>Découvrir l'offre</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Pourquoi nous</span>
+        <h2 class="section__title" data-reveal>
+          <span>Une vidéo qui marche,</span>
+          <span>quand on en a <em>besoin.</em></span>
+        </h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">01</span>
+          <h3>Architecture ouverte</h3>
+          <p>Nous travaillons avec les marques leaders (Axis, Hikvision, Bosch, Hanwha) en <strong>protocole ONVIF</strong>. Aucun verrouillage fournisseur — vous restez libre de votre système et de vos prestataires.</p>
+        </div>
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">02</span>
+          <h3>RGPD by design</h3>
+          <p>Masques de confidentialité, durée de conservation paramétrée, registre des traitements, procédure d'accès aux personnes filmées : <strong>tout est livré conforme dès la mise en service</strong>, pas en option.</p>
+        </div>
+        <div class="why-grid__item" data-reveal>
+          <span class="why-grid__num">03</span>
+          <h3>Supervision réelle</h3>
+          <p>Au-delà de l'enregistrement, nous opérons une <strong>supervision active</strong> avec levée de doute par centre certifié APSAD P5 sur option, alertes intelligentes et reporting d'incidents.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="offre">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Notre offre vidéosurveillance</span>
+        <h2 class="section__title" data-reveal>
+          <span>Du capteur au pixel,</span>
+          <span>tout est <em>maîtrisé.</em></span>
+        </h2>
+      </div>
+
+      <div class="sub-services">
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M22 10 l4 -4 M22 22 l4 4 M10 10 l-4 -4 M10 22 l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h3>Étude d'implantation</h3>
+          <p>Plan de masse, calcul des focales, simulation des champs de vision et des angles morts. Masques de confidentialité sur les zones privées (bureaux, cafétéria) calculés dès la phase d'étude.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><rect x="4" y="10" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M24 14l4-2v8l-4-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="14" cy="17" r="3" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3>Caméras IP haute définition</h3>
+          <p>Fixes, dômes motorisés (PTZ), thermiques pour la détection périmétrique, fisheye 360° pour les open-spaces, ANPR pour la lecture de plaques. Résolutions de 2 à 12 mégapixels, low-light et IR jusqu'à 50 m.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><rect x="5" y="6" width="22" height="16" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M5 11h22M9 26h14" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3>NVR / VMS hybride</h3>
+          <p>Stockage local en NVR pour les flux haute résolution, redondance cloud chiffré pour la résilience. Architecture évolutive de 4 caméras à plusieurs centaines, multi-sites.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.5"/><path d="M16 8v8l5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Supervision 24/7</h3>
+          <p>Levée de doute par centre certifié APSAD P5 sur option. Détection d'intrusion par analyse vidéo IA (différenciation humain / animal / véhicule), alertes mobiles, intervention agent de sécurité.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4 L26 9 V18 C26 22 22 26 16 28 C10 26 6 22 6 18 V9 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M11 16l3 3 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Conformité RGPD intégrée</h3>
+          <p>Registre des traitements, durée de conservation paramétrée (30 jours par défaut), affichage réglementaire des panneaux d'information, procédure de réponse aux demandes d'accès. Audit de conformité annuel.</p>
+        </article>
+
+        <article class="sub-service" data-reveal>
+          <div class="sub-service__icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 26V6M8 14l8-8 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Couplage contrôle d'accès</h3>
+          <p>Vidéo et accès gérés depuis la même interface. Levée de doute visuelle à chaque badgeage, vérification a posteriori des entrées/sorties, alerte en cas de pass-back ou de tentative d'intrusion.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="callout">
+        <p data-reveal>
+          <em>Notre principe</em> : la vidéo doit servir à <strong>prévenir, dissuader, et
+          documenter</strong> — pas à fliquer. Toute installation respecte le <strong>principe
+          de proportionnalité</strong> du RGPD, et les zones privées sont masquées par défaut.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Cas d'usage</span>
+        <h2 class="section__title" data-reveal>
+          <span>Sept terrains,</span>
+          <span>sept <em>configurations.</em></span>
+        </h2>
+      </div>
+
+      <div class="sectors">
+        <article class="sector" data-reveal><h3>Logistique</h3><p>Surveillance des quais de chargement, lecture de plaques en entrée et sortie, levée de doute périmétrique nocturne par caméras thermiques.</p></article>
+        <article class="sector" data-reveal><h3>Industrie</h3><p>Sécurisation des zones ATEX, surveillance des stockages à valeur élevée, accès aux laboratoires R&D, conformité ICPE.</p></article>
+        <article class="sector" data-reveal><h3>Tertiaire</h3><p>Hall d'accueil, parkings, réserves. Couplage avec le contrôle d'accès pour la levée de doute visuelle. Masques RGPD sur les espaces de travail.</p></article>
+        <article class="sector" data-reveal><h3>Retail</h3><p>Anti-démarque inconnue, surveillance des caisses, comptage de fréquentation, détection de comportements anormaux par IA.</p></article>
+        <article class="sector" data-reveal><h3>Santé</h3><p>Contrôle des points d'accès en EHPAD, surveillance des urgences en clinique, alerte chute via caméras IA dans les couloirs.</p></article>
+        <article class="sector" data-reveal><h3>Collectivités</h3><p>Vidéoprotection urbaine, surveillance des écoles, des gymnases, et des points d'apport volontaire. Coordination avec la police municipale.</p></article>
+        <article class="sector" data-reveal><h3>Hôtellerie</h3><p>Surveillance des parties communes, parkings clients, zones de service. Extrême discrétion, design des caméras intégré à l'architecture.</p></article>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Sur le terrain</span>
+        <h2 class="section__title" data-reveal>
+          <span>De la caméra</span>
+          <span>au <em>poste de supervision.</em></span>
+        </h2>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--lg" data-reveal>
+          <img src="https://images.unsplash.com/photo-1614624533395-7ee4e8e8de2c?w=1200&q=75&auto=format&fit=crop" alt="Caméra de vidéosurveillance IP en extérieur" loading="lazy" />
+          <figcaption><span>Caméras IP extérieures</span><span class="muted">Périmétrie & accès</span></figcaption>
+        </figure>
+        <figure class="gallery__item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=900&q=75&auto=format&fit=crop" alt="Poste de supervision multi-écrans" loading="lazy" />
+          <figcaption><span>Supervision</span><span class="muted">VMS multi-flux</span></figcaption>
+        </figure>
+        <figure class="gallery__item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1551808525-51a94da548ce?w=900&q=75&auto=format&fit=crop" alt="Caméra dôme motorisée" loading="lazy" />
+          <figcaption><span>Dômes motorisés</span><span class="muted">PTZ haute résolution</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Questions fréquentes — Vidéosurveillance</span>
+        <h2 class="section__title" data-reveal>
+          <span>Tout ce que la</span>
+          <span>réglementation <em>impose.</em></span>
+        </h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq__item" data-reveal>
+          <summary><span>Faut-il déclarer une vidéosurveillance à la CNIL ?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Pour les <strong>espaces non ouverts au public</strong> (locaux professionnels privés), une inscription au registre des traitements RGPD est obligatoire mais pas de déclaration CNIL. Pour les <strong>lieux ouverts au public</strong>, une autorisation préfectorale est requise. Nous prenons en charge l'ensemble du processus de conformité.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>Quelle est la durée légale de conservation des images ?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">La CNIL recommande <strong>30 jours maximum</strong>. Au-delà, la durée doit être justifiée par un besoin légitime (procédure judiciaire, investigation). Nous paramétrons par défaut une rotation à 30 jours, ajustable selon votre usage déclaré.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>Quelle différence entre NVR et VMS ?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Un <strong>NVR</strong> (Network Video Recorder) est un enregistreur dédié, fermé, simple. Un <strong>VMS</strong> (Video Management System) est un logiciel ouvert qui gère plusieurs sites, intègre l'analyse vidéo, le contrôle d'accès et l'IA. Pour 1 à 16 caméras, NVR suffit. Au-delà ou pour du multi-sites, VMS est recommandé.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>Peut-on coupler la vidéo et le contrôle d'accès ?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Oui, c'est même <strong>fortement recommandé</strong>. Le couplage permet la levée de doute visuelle à chaque badgeage, et la vérification a posteriori des entrées/sorties. Les deux systèmes sont gérés depuis la même interface unifiée.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>Que se passe-t-il en cas de coupure réseau ?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Les caméras IP enregistrent en local sur carte SD ou sur le NVR pendant la coupure, puis synchronisent avec le cloud à la reprise. <strong>Aucune image n'est perdue.</strong> Une alerte est envoyée à l'exploitant en cas de coupure prolongée.</div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span>L'analyse vidéo par IA est-elle conforme RGPD ?</span><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="faq__body">Selon l'usage. La <strong>détection d'objets ou de comportements anormaux</strong> est conforme. La <strong>reconnaissance faciale</strong> requiert une autorisation spécifique (CNIL, autorisation préfectorale). Nous vous orientons sur les usages autorisés selon votre contexte.</div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="section__head">
+        <span class="kicker" data-reveal>Aussi chez MCO Facilities</span>
+        <h2 class="section__title" data-reveal>
+          <span>Trois autres</span>
+          <span>terrains <em>d'expertise.</em></span>
+        </h2>
+      </div>
+      <div class="related">
+        <a href="/services/maintien-condition-operationnelle/" class="related__card" data-reveal>
+          <span class="related__num">01</span>
+          <h3>Maintien en Condition Opérationnelle</h3>
+          <p>Maintenance préventive et corrective de vos installations.</p>
+          <span class="related__link">Découvrir →</span>
+        </a>
+        <a href="/services/controle-acces/" class="related__card" data-reveal>
+          <span class="related__num">03</span>
+          <h3>Contrôle d'accès</h3>
+          <p>Badges Mifare, biométrie, mobile NFC, intégration AD.</p>
+          <span class="related__link">Découvrir →</span>
+        </a>
+        <a href="/services/maintenance-multi-technique/" class="related__card" data-reveal>
+          <span class="related__num">04</span>
+          <h3>Maintenance multi-technique</h3>
+          <p>CVC, électricité, plomberie, courants faibles, GTB.</p>
+          <span class="related__link">Découvrir →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta-block">
+        <div data-reveal>
+          <span class="kicker">Sécuriser un site</span>
+          <h2 class="cta-block__title"><span>Étude vidéo</span><span><em>gratuite.</em></span></h2>
+          <p>Visite technique sur site, plan de masse avec implantation des caméras, devis détaillé en moins de 7 jours ouvrés. Sans engagement.</p>
+        </div>
+        <div class="cta-block__actions" data-reveal>
+          <a href="/contact/" class="btn btn--primary"><span>Demander l'étude</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="tel:+33670986561" class="btn btn--ghost"><span>+33 6 70 98 65 61</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <svg width="148" height="36" viewBox="0 0 180 44" fill="none">
+          <g transform="translate(2 6)"><path d="M16 0 L30 8 L30 24 L16 32 L2 24 L2 8 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 21 L9 11 L16 18 L23 11 L23 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+          <text x="44" y="29" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="20" letter-spacing="0.5" fill="currentColor">MCO</text>
+          <text x="92" y="29" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="20" fill="currentColor" opacity="0.55">facilities</text>
+        </svg>
+        <p>Maintien en Condition Opérationnelle, vidéosurveillance et contrôle d'accès — pour des sites sereins et performants.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Pied de page">
+        <div><h4>Services</h4><a href="/services/maintien-condition-operationnelle/">MCO</a><a href="/services/videosurveillance/">Vidéosurveillance</a><a href="/services/controle-acces/">Contrôle d'accès</a><a href="/services/maintenance-multi-technique/">Multi-technique</a></div>
+        <div><h4>Société</h4><a href="/#expertise">Expertise</a><a href="/#methode">Méthode</a><a href="/#references">Références</a><a href="/contact/">Contact</a></div>
+        <div><h4>Coordonnées</h4><a href="tel:+33670986561">+33 6 70 98 65 61</a><a href="mailto:alexandre.angulo@mco-facilities.fr">Email</a><span>26 chemin de la digue, 38760 Varces</span></div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> MCO Facilities — Tous droits réservés.</span>
+      <span class="footer__legal"><a href="/mentions-legales/">Mentions légales</a> · <span class="muted">Conçu en France</span></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
