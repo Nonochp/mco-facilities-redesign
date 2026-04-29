@@ -431,6 +431,21 @@
       </div>
     </section>
 
+    <!-- ═════════════════ FULL-BLEED IMAGE BANNER ═════════════════ -->
+    <section class="banner">
+      <div class="banner__photo">
+        <img src="https://images.unsplash.com/photo-1587502537745-84b86da1204f?w=2000&q=80&auto=format&fit=crop" alt="Vue d'ensemble d'un bâtiment tertiaire moderne" loading="lazy" />
+      </div>
+      <div class="banner__content">
+        <span class="kicker" data-reveal>Une approche</span>
+        <p class="banner__text" data-reveal>
+          On commence toujours par <em>regarder</em> avant de proposer.<br/>
+          On installe en <em>standard ouvert</em> pour que vous restiez libre.<br/>
+          On mesure pour <em>améliorer</em>, pas pour faire joli.
+        </p>
+      </div>
+    </section>
+
     <!-- ═════════════════ MÉTHODE ═════════════════ -->
     <section class="section section--dark" id="methode">
       <div class="section__head">
@@ -441,20 +456,29 @@
         </h2>
       </div>
 
-      <ol class="method">
+      <ol class="method method--with-photos">
         <li data-reveal>
+          <div class="method__media">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&q=75&auto=format&fit=crop" alt="Audit technique d'une installation par un ingénieur" loading="lazy" />
+          </div>
           <div class="method__num">01</div>
           <h3>Audit & cartographie</h3>
           <p>Visite technique complète, inventaire de l'existant, analyse de risque et préconisations chiffrées. Vous repartez avec un état des lieux factuel — pas un argumentaire commercial.</p>
           <span class="method__tag">Livrable : rapport d'audit + plan d'action</span>
         </li>
         <li data-reveal>
+          <div class="method__media">
+            <img src="https://images.unsplash.com/photo-1605265100789-13a78d04a52e?w=900&q=75&auto=format&fit=crop" alt="Mise en service d'un équipement par un technicien" loading="lazy" />
+          </div>
           <div class="method__num">02</div>
           <h3>Conception & déploiement</h3>
           <p>Choix des équipements en architecture ouverte, intégration aux systèmes existants, mise en service et formation des exploitants. Pas de dépendance fournisseur.</p>
           <span class="method__tag">Livrable : DOE, DIUO, certificats de conformité</span>
         </li>
         <li data-reveal>
+          <div class="method__media">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&q=75&auto=format&fit=crop" alt="Tableau de bord de supervision technique" loading="lazy" />
+          </div>
           <div class="method__num">03</div>
           <h3>Supervision & amélioration continue</h3>
           <p>Astreinte technique, GMAO, télésurveillance, reporting mensuel. Nous mesurons la performance pour la faire progresser, mois après mois.</p>
@@ -643,7 +667,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

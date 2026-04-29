@@ -36,7 +36,11 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
   background: var(--bg);
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 html, body { min-height: 100%; }
 body {
@@ -1056,15 +1060,15 @@ a.info-block__val:hover { color: var(--accent); }
 .hero--with-photo .hero__photo img {
   width: 100%; height: 100%;
   object-fit: cover;
-  opacity: 0.18;
-  filter: contrast(1.05) saturate(0.7);
+  opacity: 0.42;
+  filter: contrast(1.06) saturate(0.85);
 }
 .hero--with-photo .hero__photo::after {
   content: "";
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 30% 40%, transparent, rgba(8, 9, 15, 0.82) 90%),
-    linear-gradient(180deg, transparent 0%, transparent 60%, var(--bg) 100%);
+    radial-gradient(ellipse 70% 80% at 20% 50%, rgba(8,9,15,0.55), rgba(8,9,15,0.85) 70%),
+    linear-gradient(180deg, rgba(8,9,15,0.4) 0%, rgba(8,9,15,0.2) 30%, rgba(8,9,15,0.5) 70%, var(--bg) 100%);
 }
 .hero--with-photo .hero__inner,
 .hero--with-photo .hero__scroll { position: relative; z-index: 2; }
@@ -1087,15 +1091,15 @@ a.info-block__val:hover { color: var(--accent); }
 .page-hero__photo img {
   width: 100%; height: 100%;
   object-fit: cover;
-  opacity: 0.22;
-  filter: contrast(1.08) saturate(0.65);
+  opacity: 0.55;
+  filter: contrast(1.08) saturate(0.85);
 }
 .page-hero__photo::after {
   content: "";
   position: absolute; inset: 0;
   background:
-    linear-gradient(180deg, transparent 0%, var(--bg) 100%),
-    radial-gradient(ellipse 70% 50% at 50% 50%, transparent, rgba(8, 9, 15, 0.55) 100%);
+    linear-gradient(180deg, rgba(8,9,15,0.3) 0%, rgba(8,9,15,0.5) 60%, var(--bg) 100%),
+    linear-gradient(90deg, rgba(8,9,15,0.55), transparent 70%);
 }
 .page-hero__inner {
   max-width: 880px;
@@ -1168,11 +1172,16 @@ a.info-block__val:hover { color: var(--accent); }
 .service__photo img {
   width: 100%; height: 100%;
   object-fit: cover;
-  opacity: 0.10;
+  opacity: 0.22;
   transition: opacity .6s var(--ease), transform .6s var(--ease);
-  filter: saturate(0.6);
+  filter: saturate(0.85);
 }
-.service:hover .service__photo img { opacity: 0.24; transform: scale(1.04); }
+.service__photo::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(8,9,15,0.4) 0%, rgba(8,9,15,0.92) 100%);
+}
+.service:hover .service__photo img { opacity: 0.45; transform: scale(1.04); }
 .service > *:not(.service__photo) { position: relative; z-index: 2; }
 
 /* Hide existing icon block on service cards now that photos are used */
@@ -1350,9 +1359,16 @@ a.info-block__val:hover { color: var(--accent); }
   width: 100%; height: 100%;
   object-fit: cover;
   transition: transform .8s var(--ease), filter .4s;
-  filter: saturate(0.8) brightness(0.85);
+  filter: saturate(0.95) brightness(0.95);
 }
-.gallery__item:hover img { transform: scale(1.04); filter: saturate(1) brightness(0.95); }
+.gallery__item::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(8,9,15,0.78) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+.gallery__item:hover img { transform: scale(1.05); filter: saturate(1.05) brightness(1); }
 .gallery__item figcaption {
   position: absolute;
   bottom: 16px; left: 18px; right: 18px;
@@ -1646,5 +1662,108 @@ a.info-block__val:hover { color: var(--accent); }
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
+}
+
+/* ─── BANNER (full-bleed photo with text overlay) ─── */
+.banner {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: clamp(80px, 14vh, 160px) var(--pad-x);
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+}
+.banner__photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.banner__photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: contrast(1.05) saturate(0.85);
+}
+.banner__photo::after {
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(90deg, rgba(8,9,15,0.92) 0%, rgba(8,9,15,0.65) 50%, rgba(8,9,15,0.4) 100%),
+    linear-gradient(180deg, rgba(8,9,15,0.3) 0%, transparent 30%, transparent 70%, rgba(8,9,15,0.5) 100%);
+}
+.banner__content {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max);
+  width: 100%;
+  margin-inline: auto;
+}
+.banner__content .kicker { color: var(--accent); margin-bottom: 28px; }
+.banner__text {
+  font-size: clamp(22px, 3vw, 38px);
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  color: var(--text);
+  max-width: 24ch;
+}
+.banner__text em {
+  color: var(--accent);
+}
+
+/* ─── METHOD with photos ─── */
+.method--with-photos li {
+  padding: 0;
+  overflow: hidden;
+  background: var(--bg-soft);
+}
+.method--with-photos .method__media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+}
+.method--with-photos .method__media img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .8s var(--ease);
+  filter: saturate(0.95) brightness(0.92);
+}
+.method--with-photos li:hover .method__media img { transform: scale(1.04); }
+.method--with-photos .method__media::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(8,9,15,0.3) 100%);
+  pointer-events: none;
+}
+.method--with-photos .method__num {
+  position: absolute;
+  top: 18px; left: 18px;
+  z-index: 2;
+  background: rgba(8,9,15,0.85);
+  backdrop-filter: blur(8px);
+  margin-bottom: 0;
+}
+.method--with-photos h3,
+.method--with-photos p,
+.method--with-photos .method__tag {
+  padding-inline: 28px;
+}
+.method--with-photos h3 { padding-top: 24px; }
+.method--with-photos p { color: var(--text-mute); }
+.method--with-photos .method__tag {
+  margin-top: 16px;
+  padding-bottom: 28px;
+  border-top: 1px dashed var(--line);
+  padding-top: 16px;
+  margin-inline: 28px;
+}
+.method--with-photos::before { display: none; }
+
+/* ─── BG-LAYER tweak: orbs less aggressive on mobile ─── */
+@media (max-width: 720px) {
+  .bg-orb { opacity: 0.18 !important; filter: blur(60px); }
+  .bg-grid { background-size: 48px 48px; }
+  .bg-noise { opacity: 0.03; }
 }
 
