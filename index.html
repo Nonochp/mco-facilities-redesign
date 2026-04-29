@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0e1a" />
+  <title>MCO Facilities — Maintien en Condition Opérationnelle, vidéosurveillance et contrôle d'accès</title>
+  <meta name="description" content="MCO Facilities, basé à Varces (38), conçoit, déploie et maintient vos installations multi-techniques, vidéosurveillance et contrôle d'accès. Une expertise sur-mesure pour la sécurité et la performance de vos sites." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+</head>
+
+<body>
+  <!-- ───────── Background layers (parallax) ───────── -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <!-- ───────── Custom cursor (desktop only) ───────── -->
+  <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div></div>
+
+  <!-- ───────── Nav ───────── -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" aria-label="MCO Facilities — accueil">
+      <svg width="148" height="36" viewBox="0 0 180 44" fill="none">
+        <g transform="translate(2 6)">
+          <path d="M16 0 L30 8 L30 24 L16 32 L2 24 L2 8 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M9 21 L9 11 L16 18 L23 11 L23 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <text x="44" y="29" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="20" letter-spacing="0.5" fill="currentColor">MCO</text>
+        <text x="92" y="29" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="20" fill="currentColor" opacity="0.55">facilities</text>
+      </svg>
+    </a>
+
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#expertise">Expertise</a>
+      <a href="#services">Services</a>
+      <a href="#methode">Méthode</a>
+      <a href="#references">Références</a>
+    </nav>
+
+    <a href="#contact" class="nav__cta">
+      <span>Nous contacter</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </header>
+
+  <main id="top">
+
+    <!-- ═════════════════ HERO ═════════════════ -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__eyebrow" data-reveal>
+          <span class="dot"></span>
+          <span>Varces · Auvergne-Rhône-Alpes</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="line" data-reveal><span>Vos installations</span></span>
+          <span class="line" data-reveal><span>en condition <em>opérationnelle.</em></span></span>
+          <span class="line" data-reveal><span>Vos sites <em>sous protection.</em></span></span>
+        </h1>
+
+        <p class="hero__lede" data-reveal>
+          MCO Facilities accompagne les entreprises, collectivités et bailleurs dans la
+          maintenance multi-technique, la <strong>vidéosurveillance</strong> et le
+          <strong>contrôle d'accès</strong> — du diagnostic à la supervision 24/7.
+        </p>
+
+        <div class="hero__actions" data-reveal>
+          <a href="#services" class="btn btn--primary">
+            <span>Découvrir nos services</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost">
+            <span>Demander un audit</span>
+          </a>
+        </div>
+
+        <div class="hero__meta" data-reveal>
+          <div>
+            <span class="meta__num"><span data-counter data-target="15">0</span><sup>+</sup></span>
+            <span class="meta__lbl">années d'expertise</span>
+          </div>
+          <div>
+            <span class="meta__num"><span data-counter data-target="240">0</span></span>
+            <span class="meta__lbl">sites supervisés</span>
+          </div>
+          <div>
+            <span class="meta__num">24<span class="muted">/</span>7</span>
+            <span class="meta__lbl">disponibilité technique</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"><div></div></div>
+      </div>
+    </section>
+
+    <!-- ═════════════════ MARQUEE / TAGS ═════════════════ -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>CVC</span><span>·</span>
+        <span>Électricité</span><span>·</span>
+        <span>Plomberie</span><span>·</span>
+        <span>Vidéosurveillance IP</span><span>·</span>
+        <span>Contrôle d'accès</span><span>·</span>
+        <span>Détection intrusion</span><span>·</span>
+        <span>GTB / GTC</span><span>·</span>
+        <span>Maintenance préventive</span><span>·</span>
+        <span>CVC</span><span>·</span>
+        <span>Électricité</span><span>·</span>
+        <span>Plomberie</span><span>·</span>
+        <span>Vidéosurveillance IP</span><span>·</span>
+        <span>Contrôle d'accès</span><span>·</span>
+        <span>Détection intrusion</span><span>·</span>
+        <span>GTB / GTC</span><span>·</span>
+        <span>Maintenance préventive</span><span>·</span>
+      </div>
+    </section>
+
+    <!-- ═════════════════ EXPERTISE ═════════════════ -->
+    <section class="section" id="expertise">
+      <div class="section__head">
+        <span class="kicker" data-reveal>01 — Expertise</span>
+        <h2 class="section__title" data-reveal>
+          <span>Une équipe technique,</span>
+          <span><em>une seule</em> exigence&nbsp;: la continuité.</span>
+        </h2>
+      </div>
+
+      <div class="expertise">
+        <p class="expertise__lede" data-reveal>
+          Depuis Varces, nous opérons partout en Auvergne-Rhône-Alpes pour assurer
+          le maintien en condition opérationnelle de vos bâtiments tertiaires,
+          industriels et résidentiels. Notre approche conjugue maintenance
+          multi-technique et systèmes de sécurité pour vous offrir une supervision
+          unifiée, sans rupture de service.
+        </p>
+
+        <ul class="expertise__pillars">
+          <li data-reveal>
+            <span class="pillar__num">P/01</span>
+            <h3>Diagnostic d'abord</h3>
+            <p>Audit préalable systématique : on cartographie l'existant avant de proposer.</p>
+          </li>
+          <li data-reveal>
+            <span class="pillar__num">P/02</span>
+            <h3>Multi-métiers</h3>
+            <p>CVC, électricité, plomberie, sûreté électronique — un interlocuteur unique.</p>
+          </li>
+          <li data-reveal>
+            <span class="pillar__num">P/03</span>
+            <h3>Supervision 24/7</h3>
+            <p>Astreinte technique, télésurveillance et reporting mensuel par site.</p>
+          </li>
+          <li data-reveal>
+            <span class="pillar__num">P/04</span>
+            <h3>Conformité</h3>
+            <p>RGPD pour la vidéo, NF&nbsp;EN&nbsp;50133 pour l'accès, traçabilité complète.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═════════════════ SERVICES ═════════════════ -->
+    <section class="section section--dark" id="services">
+      <div class="section__head">
+        <span class="kicker" data-reveal>02 — Services</span>
+        <h2 class="section__title" data-reveal>
+          <span>Quatre piliers,</span>
+          <span>un même <em>contrat de confiance.</em></span>
+        </h2>
+      </div>
+
+      <div class="services">
+
+        <article class="service service--featured" data-reveal data-tilt>
+          <div class="service__index">01</div>
+          <div class="service__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M8 14h32M8 24h32M8 34h32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="14" cy="14" r="2" fill="currentColor"/>
+              <circle cx="24" cy="24" r="2" fill="currentColor"/>
+              <circle cx="34" cy="34" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Maintien en Condition Opérationnelle</h3>
+          <p>Notre cœur de métier. Nous prenons en charge la maintenance préventive et corrective de vos installations multi-techniques pour garantir leur disponibilité.</p>
+          <ul>
+            <li>Plans de maintenance préventive sur-mesure</li>
+            <li>Interventions correctives sous SLA</li>
+            <li>GMAO et reporting mensuel</li>
+            <li>Pilotage budgétaire & CAPEX</li>
+          </ul>
+          <a href="#contact" class="service__link">
+            <span>Échanger sur un MCO</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="service" data-reveal data-tilt>
+          <div class="service__index">02</div>
+          <div class="service__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="6" y="12" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M34 18l8-4v20l-8-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <circle cx="20" cy="22" r="4" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="20" cy="22" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Vidéosurveillance</h3>
+          <p>Conception, déploiement et exploitation de systèmes vidéo IP. Caméras, NVR, supervision déportée, conformité RGPD et CNIL.</p>
+          <ul>
+            <li>Étude d'implantation & masques de confidentialité</li>
+            <li>Caméras IP, thermiques, fisheye, ANPR</li>
+            <li>Stockage hybride NVR + cloud chiffré</li>
+            <li>Supervision et levée de doute 24/7</li>
+          </ul>
+          <a href="#contact" class="service__link">
+            <span>Sécuriser un site</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="service" data-reveal data-tilt>
+          <div class="service__index">03</div>
+          <div class="service__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="10" y="8" width="20" height="32" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="24" cy="22" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 25v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M34 14h6v8h-6M34 26h6v8h-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Contrôle d'accès</h3>
+          <p>Maîtrisez les flux. Lecteurs biométriques, badges, claviers, vidéophonie et interphonie — pilotés depuis une interface unique.</p>
+          <ul>
+            <li>Badges Mifare, biométrie, mobile NFC</li>
+            <li>Gestion centralisée multi-sites</li>
+            <li>Anti-pass-back & traçabilité RGPD</li>
+            <li>Intégration SIRH / annuaires AD</li>
+          </ul>
+          <a href="#contact" class="service__link">
+            <span>Auditer mes accès</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="service" data-reveal data-tilt>
+          <div class="service__index">04</div>
+          <div class="service__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4 4M33 33l4 4M11 37l4-4M33 15l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Maintenance multi-technique</h3>
+          <p>CVC, électricité, plomberie, courants faibles. Une équipe pluri-disciplinaire pour adresser l'ensemble du périmètre technique de vos bâtiments.</p>
+          <ul>
+            <li>Climatisation, VMC, chauffage</li>
+            <li>Tableaux divisionnaires & TGBT</li>
+            <li>Plomberie, sanitaires, désembouage</li>
+            <li>Détection incendie & intrusion</li>
+          </ul>
+          <a href="#contact" class="service__link">
+            <span>Confier mes installations</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═════════════════ MÉTHODE ═════════════════ -->
+    <section class="section" id="methode">
+      <div class="section__head">
+        <span class="kicker" data-reveal>03 — Méthode</span>
+        <h2 class="section__title" data-reveal>
+          <span>Trois étapes,</span>
+          <span>aucune <em>zone d'ombre.</em></span>
+        </h2>
+      </div>
+
+      <ol class="method">
+        <li data-reveal>
+          <div class="method__num">01</div>
+          <h3>Audit & cartographie</h3>
+          <p>Visite technique complète, inventaire de l'existant, analyse de risque et préconisations chiffrées. Vous repartez avec un état des lieux factuel, pas un argumentaire commercial.</p>
+          <span class="method__tag">Livrable : rapport d'audit + plan d'action</span>
+        </li>
+        <li data-reveal>
+          <div class="method__num">02</div>
+          <h3>Conception & déploiement</h3>
+          <p>Choix des équipements en architecture ouverte, intégration aux systèmes existants, mise en service et formation des exploitants. Pas de dépendance fournisseur.</p>
+          <span class="method__tag">Livrable : DOE, DIUO, certificats de conformité</span>
+        </li>
+        <li data-reveal>
+          <div class="method__num">03</div>
+          <h3>Supervision & amélioration continue</h3>
+          <p>Astreinte technique, GMAO, télésurveillance, reporting mensuel. Nous mesurons la performance pour la faire progresser, mois après mois.</p>
+          <span class="method__tag">Livrable : tableau de bord mensuel + revue trimestrielle</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ═════════════════ RÉFÉRENCES ═════════════════ -->
+    <section class="section section--dark" id="references">
+      <div class="section__head">
+        <span class="kicker" data-reveal>04 — Références</span>
+        <h2 class="section__title" data-reveal>
+          <span>Ils nous font</span>
+          <span><em>confiance</em> au quotidien.</span>
+        </h2>
+      </div>
+
+      <div class="refs">
+        <div class="refs__grid">
+          <div class="refs__cell" data-reveal><span>Tertiaire</span><span class="muted">Sièges sociaux</span></div>
+          <div class="refs__cell" data-reveal><span>Industrie</span><span class="muted">Sites de production</span></div>
+          <div class="refs__cell" data-reveal><span>Logistique</span><span class="muted">Plateformes & entrepôts</span></div>
+          <div class="refs__cell" data-reveal><span>Bailleurs</span><span class="muted">Parc résidentiel</span></div>
+          <div class="refs__cell" data-reveal><span>Collectivités</span><span class="muted">Écoles, mairies</span></div>
+          <div class="refs__cell" data-reveal><span>Retail</span><span class="muted">Réseaux multi-sites</span></div>
+          <div class="refs__cell" data-reveal><span>Santé</span><span class="muted">EHPAD, cliniques</span></div>
+          <div class="refs__cell" data-reveal><span>Hôtellerie</span><span class="muted">Groupes & indépendants</span></div>
+        </div>
+
+        <figure class="quote" data-reveal>
+          <svg class="quote__mark" viewBox="0 0 80 64" fill="none" aria-hidden="true">
+            <path d="M0 64V32C0 14.327 14.327 0 32 0v16C23.163 16 16 23.163 16 32h16v32H0zM48 64V32c0-17.673 14.327-32 32-32v16c-8.837 0-16 7.163-16 16h16v32H48z" fill="currentColor"/>
+          </svg>
+          <blockquote>
+            Pendant une vague de cambriolages dans la zone, nos sites sous contrat MCO Facilities n'ont jamais été inquiétés. Le couplage vidéosurveillance + contrôle d'accès a été déterminant.
+          </blockquote>
+          <figcaption>
+            <span>Directeur de l'exploitation</span>
+            <span class="muted">— Groupe logistique, 6 plateformes</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═════════════════ CONTACT ═════════════════ -->
+    <section class="section" id="contact">
+      <div class="section__head">
+        <span class="kicker" data-reveal>05 — Contact</span>
+        <h2 class="section__title" data-reveal>
+          <span>Parlons de votre</span>
+          <span>prochain <em>projet.</em></span>
+        </h2>
+      </div>
+
+      <div class="contact">
+        <form class="contact__form" data-reveal onsubmit="event.preventDefault(); this.querySelector('button').textContent='Message envoyé ✓'; this.querySelector('button').setAttribute('disabled','');">
+          <div class="field">
+            <label for="f-name">Nom</label>
+            <input id="f-name" name="name" type="text" required placeholder="Prénom Nom" />
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" required placeholder="vous@entreprise.fr" />
+            </div>
+            <div class="field">
+              <label for="f-phone">Téléphone</label>
+              <input id="f-phone" name="phone" type="tel" placeholder="06 00 00 00 00" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-subject">Sujet</label>
+            <select id="f-subject" name="subject">
+              <option>Maintenance multi-technique</option>
+              <option>Vidéosurveillance</option>
+              <option>Contrôle d'accès</option>
+              <option>Audit & diagnostic</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg">Votre besoin</label>
+            <textarea id="f-msg" name="message" rows="4" placeholder="Décrivez votre site, vos contraintes, votre échéance…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">
+            <span>Envoyer ma demande</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+
+        <aside class="contact__info" data-reveal>
+          <div class="info-block">
+            <span class="info-block__lbl">Téléphone</span>
+            <a href="tel:+33670986561" class="info-block__val">+33 6 70 98 65 61</a>
+            <a href="tel:+33476729958" class="info-block__sub">04 76 72 99 58 — fixe</a>
+          </div>
+
+          <div class="info-block">
+            <span class="info-block__lbl">Email</span>
+            <a href="mailto:alexandre.angulo@mco-facilities.fr" class="info-block__val">alexandre.angulo<wbr/>@mco-facilities.fr</a>
+          </div>
+
+          <div class="info-block">
+            <span class="info-block__lbl">Adresse</span>
+            <span class="info-block__val">26 chemin de la digue<br/>38760 Varces</span>
+            <span class="info-block__sub">Auvergne-Rhône-Alpes — France</span>
+          </div>
+
+          <div class="info-block info-block--accent">
+            <span class="info-block__lbl">Astreinte 24/7</span>
+            <span class="info-block__val">Sites sous contrat de supervision</span>
+            <span class="info-block__sub">Délai d'intervention contractualisé</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═════════════════ FOOTER ═════════════════ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <svg width="148" height="36" viewBox="0 0 180 44" fill="none">
+          <g transform="translate(2 6)">
+            <path d="M16 0 L30 8 L30 24 L16 32 L2 24 L2 8 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M9 21 L9 11 L16 18 L23 11 L23 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <text x="44" y="29" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="20" letter-spacing="0.5" fill="currentColor">MCO</text>
+          <text x="92" y="29" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="20" fill="currentColor" opacity="0.55">facilities</text>
+        </svg>
+        <p>Maintien en Condition Opérationnelle, vidéosurveillance et contrôle d'accès — pour des sites sereins et performants.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Pied de page">
+        <div>
+          <h4>Services</h4>
+          <a href="#services">MCO</a>
+          <a href="#services">Vidéosurveillance</a>
+          <a href="#services">Contrôle d'accès</a>
+          <a href="#services">Multi-technique</a>
+        </div>
+        <div>
+          <h4>Société</h4>
+          <a href="#expertise">Expertise</a>
+          <a href="#methode">Méthode</a>
+          <a href="#references">Références</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h4>Coordonnées</h4>
+          <a href="tel:+33670986561">+33 6 70 98 65 61</a>
+          <a href="mailto:alexandre.angulo@mco-facilities.fr">Email</a>
+          <span>26 chemin de la digue, 38760 Varces</span>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> MCO Facilities — Tous droits réservés.</span>
+      <span class="muted">Site sur-mesure · Conçu en France</span>
+    </div>
+  </footer>
+
+  <!-- Libs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
