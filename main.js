@@ -7,18 +7,31 @@
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-  /* ─── 1. Smooth scroll (Lenis) ─── */
+  /* ─── 1. Smooth scroll (Lenis) — driven by ONE rAF source only ─── */
   let lenis;
+  const hasGSAP = typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined';
+
   if (!prefersReducedMotion && typeof Lenis !== 'undefined') {
     lenis = new Lenis({
-      duration: 1.15,
+      duration: 1.05,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
-      lerp: 0.1,
+      wheelMultiplier: 1,
+      touchMultiplier: 1.4,
+      lerp: 0.12,
     });
 
-    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
-    requestAnimationFrame(raf);
+    if (hasGSAP) {
+      // Driven by GSAP ticker only — do NOT also call requestAnimationFrame
+      gsap.registerPlugin(ScrollTrigger);
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add((time) => lenis.raf(time * 1000));
+      gsap.ticker.lagSmoothing(0);
+    } else {
+      // Fallback rAF loop when GSAP is absent
+      const raf = (time) => { lenis.raf(time); requestAnimationFrame(raf); };
+      requestAnimationFrame(raf);
+    }
 
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', (e) => {
@@ -27,19 +40,12 @@
         const target = document.querySelector(id);
         if (!target) return;
         e.preventDefault();
-        lenis.scrollTo(target, { offset: -80, duration: 1.4 });
+        lenis.scrollTo(target, { offset: -80, duration: 1.2 });
       });
     });
-  }
-
-  /* ─── 2. GSAP integration with Lenis ─── */
-  if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+  } else if (hasGSAP) {
+    // No Lenis (reduced motion or lib missing) — still register GSAP plugin for parallax
     gsap.registerPlugin(ScrollTrigger);
-    if (lenis) {
-      lenis.on('scroll', ScrollTrigger.update);
-      gsap.ticker.add((time) => lenis.raf(time * 1000));
-      gsap.ticker.lagSmoothing(0);
-    }
   }
 
   /* ─── 3. Hero parallax (background layers) ─── */
